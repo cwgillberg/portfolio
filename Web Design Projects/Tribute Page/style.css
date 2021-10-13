@@ -6,7 +6,6 @@ body {
     background-color: lightgray;
     font-size: 15px;
     text-align: center;
-
 }
 
 #head {
@@ -45,11 +44,15 @@ body {
     }
 
 
+    #main {
+        text-align: left;
+    }
+
     #tribute-info {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%
+        max-width: 50%
 
     }
 
@@ -72,8 +75,15 @@ body {
         margin: 0 auto;
     }
 
-    #body {
+    body {
         font-size: 20px;
+    }
+
+    #tribute-info {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 
 }
