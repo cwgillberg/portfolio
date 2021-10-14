@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Customer Support Form</title>
+</head>
+<body>
+
+<header>
+    <h1 id="title">Customer Support Form</h1>
+    <p id="description">Welcome to our Customer Support Form, fill out your issue below and we will get back to you</p>
+</header>
+<form id="survey-form">
+    <br>
+    <div id="sub">
+        <section id="initial-fields">
+            <label for="name" id="name-label">Your Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+
+            <label for="email" id="email-label">Your email address: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address here" required>
+
+            <label for="number" id="number-label">Your playerID (Optional): </label>
+            <input type="number" name="number" id="number" min="0" max="1000" placeholder="Enter your playerID here">
+        
+            
+            <p>Which game do you want support for?</p>
+            <select id="dropdown" name="game">
+                <option disabled selected value>Select game</option>
+                <option value="Boom">Boomgame</option>
+                <option value="Cave">Caverunner</option>
+                <option value="Slime">Slime's Revenge</option>
+            </select>
+        </section>
+
+        <section id="aoi">
+            <p>Which area does your inquiry relate to?</p>
+            <label>
+                <input name="aoi" value="tech" type="radio" checked> Technical Support
+            </label>
+
+            <label>
+                <input name="aoi" value="bug" type="radio"> Bugs
+            </label>
+
+            <label>
+                <input name="aoi" value="purchase" type="radio"> Purchases
+            </label>
+            
+            <label>
+                <input name="aoi" value="other" type="radio"> Other
+            </label>
+        </section>
+
+        <br>
+        <section id="text">
+            <label for="textarea">Describe your inquiry below: </label>
+            <textarea id="textarea" name="textarea" required>
+            </textarea>
+        </section>
+
+
+        <br>
+        <section id="checks">
+            <label>
+                <input name="agreement" value="agreement" type="checkbox"><p>I have read and agree with the <a href="#">terms of conditions</a></p>
+            </label>
+
+            <label>
+                <input name="storage" value="storage" type="checkbox"><p>I consent that (coporation) stores my information and may use it for marketing purposes</p>
+            </label>
+        </section>
+
+        <button type="submit" id="submit">Submit</button>
+        <br>
+    </div>
+</form>
+
+</body>
+</html>
