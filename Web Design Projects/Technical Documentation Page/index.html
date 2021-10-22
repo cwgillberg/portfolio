@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>CSS3 Media Queries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <header>CSS3 Media Queries</header>
+        <section id="links">
+            <a href="#introduction" class="nav-link">introduction</a> 
+            <a href="#syntax" class="nav-link">syntax</a>
+            <a href="#media_types" class="nav-link">media types</a>
+            <a href="#screen_dimensions" class="nav-link">screen dimensions</a>
+            <a href="#examples" class="nav-link">examples</a>
+            <a href="#further_reading" class="nav-link">further reading</a>
+        </section>
+    </nav>
+<main id="main-doc">
+
+
+    <!--Minimum of five sections-->
+
+    <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>CSS3 expanded on the previously implemented framework of media queries introduced by CSS2. Now, instead, media queries would look at
+           the capabilities of each devide using a webpage instead of the type, as to determine the proper width and height of the devide in pixels. 
+        </p>
+        <p>By using media queries, websites are made responsive and look more appealing on all devices. This is useful because more and more traffic for the web comes
+            from cellphones and other non-PC devices. Media queries enables the guiding principle of modern web design: "Always design for mobile first"
+        </p>
+
+        <p>Media queries investigate the device that is viewing the page in question, and inquire as to the type of media is being used to access the page and what size it may be
+            if such is applicable
+        </p>
+        
+    </section>
+
+    <section class="main-section" id="syntax">
+        <header>Syntax</header>
+        
+        <p>Media queries are declared by using a <code>@media</code> call in a CSS document or section, followed by terms specifying which requirements are to be met for the 
+        query to activate its following code. These requirements are expressions which are either true or false, which are the following: </p>
+        <ul>
+            <li><code>not (condition)</code> - logical expression stating that execution can only be made if the condition is false</li>
+            <li><code>(condition1) and (condition2)</code> - logical expression stating that execution can only be made if both conditions on either side of the expression is true</li>
+            <li><code>only (condition)</code> - logical expression stating execution can only be made if the condition is fulfilled</li>
+        </ul>
+
+        <p>A full query follows the following structure, where the sections in [ ] is considered optional: </p>
+        <code>
+            @media [not/only] media-type and (conditions) {
+                css code to be executed
+            }
+        </code>
+
+        <p>Within the <code>(conditions)</code> slot, most commonly a device size is defined. This is done by analyzing the width of the device, either by categorizing devices
+        which will trigger the execution of the query through a minimum bracket, through <code>min-width</code> or through a maximum bracket through <code>max-width</code>, which all 
+    create different categories or breakpoints which will trigger different media queries depending on size if several are included. Usually, a well-optimised site has inquiries for
+        tablets, phones and computers of all kinds</p>
+
+
+    </section>
+
+    <section class="main-section" id="media_types">
+        <header>Media Types</header>
+        
+        <p>There are 4 types of <code>media</code> which can be considered through media queries: </p>
+        <ul>
+            <li><code>all </code> - all media types</li>
+            <li><code>print </code> - used exclusively for printers</li>
+            <li><code>screen </code> - all screen devices, such as computer screens, tablets, smart-phones, smart-devices etc</li>
+            <li><code>speech </code> - used for screen readers</li>
+        </ul>
+
+    </section>
+
+    <section class="main-section" id="screen_dimensions">
+        <header>Screen Dimensions</header>
+        <p>There are some typical dimensions, also known as breakpoints, for a couple of different device types and sizes which are entered as conditions in a media query block </p>
+        
+        <p>Extra small devices, such as phones and devices with a width of 600px and down: </p>
+        <code>max-width: 600px</code>
+
+        <p>Small devices, such as larger phones, some tablets and the like with a width of 600px and up: </p>
+        <code>min-width: 600px</code>
+
+        <p>Medium devices, such as tablets, 768px and up: </p>
+        <code>min-width: 768px</code>
+
+        <p>Large devices, such as Laptops, with a width of 768px and up: </p>
+        <code>min-width: 992px</code>
+
+
+        <p>Extra large devices, such as large laptops and desktops with a width of 1200px and up</p>
+        <code>min-width: 1200px</code>
+    </section>
+
+    <section class="main-section" id="examples">
+        <header>Examples</header>
+
+        <p></p>
+
+    </section>
+
+
+
+
+    <section class="main-section" id="further_reading">
+        <header>Further Reading</header>
+    </section>
+</main>    
+
+</body>
+</html>

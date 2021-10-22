@@ -1,0 +1,133 @@
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    #navbar {
+        background-color: lightblue;
+        text-align: center;
+  
+    }
+
+    #navbar header {
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    #links {
+        display: block;
+        justify-content:space-around;
+    }
+
+
+    #main-doc {
+        padding-top: 40px;
+    }
+    
+    #main-doc header {
+        font-size: large;
+        text-decoration: underline;
+    }
+
+
+    a {
+        display: block;
+        color: black;
+        font-size: 16px;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        margin: 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    #navbar {
+        background-color: lightblue;
+        text-align: center;
+        height: 25%;
+    }
+
+    #navbar header {
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+
+    #main-doc {
+        padding-top: 40px;
+    }
+
+    #main-doc header {
+        font-size: large;
+        text-decoration: underline;
+    }
+
+
+    a {
+        color: black;
+        font-size: 16px;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #navbar {
+        float: left;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    #navbar {
+        position: fixed;
+        background-color: lightblue;
+        text-align: center;
+        height: 100%;
+        z-index: 1;
+        width: 150px;
+  
+    }
+
+    #navbar header {
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    #links {
+        display: block;
+        
+        justify-content:space-around;
+    }
+
+
+    #main-doc {
+        position: absolute;
+        padding-left: 160px;
+    }
+
+    #main-doc header {
+        font-size: large;
+        text-decoration: underline;
+    }
+
+    a {
+        display: block;
+        color: black;
+        font-size: 16px;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+}
