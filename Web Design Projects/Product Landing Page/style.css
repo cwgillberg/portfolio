@@ -1,153 +1,11 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#header-img {
-    width: 2%;
-    height: 2%;
-}
-
-#header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    background-color: lightskyblue;
-    /*min-height: 60px;*/
-
-}
-
-nav {
-    display: flex;
-    column-gap: 60px;
-    justify-content: space-between;
-    max-width: 40%;
-}
-
-nav a {
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: underline;
-
-}
-
-nav a:hover {
-    text-decoration: underline;
-    background-color: white;
-}
-
-main {
-    padding: 70px;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 20%;
-}
-
-#services {
-}
-
-#img {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-#pricing {
-    display: flex;
-    text-align: center;
-}
-
-#pricing section {
-    border: 1px;
-    border-style: dotted;
-    width: 40%;
-}
-
-@media screen and (max-width: 800px) {
+/*Small phones*/
+@media screen and (max-width: 600px) {
     body {
         margin: 0;
         padding: 0;
         font-size: 20px;
-    }
-    
-    
-    nav {
-        display: flex;
-        justify-content: left;
-        column-gap: 40px;
-        justify-content: space-between;
-        max-width: 70%;
-    }
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-
-    nav a {
-        display: block;
-        color: black;
-        padding: 14px 16px;
-        text-decoration: underline;
-    
-    }
-    
-    nav a:hover {
-        text-decoration: underline;
-        background-color: white;
-    }
-
-    #header {
-        display: flex;
-        position: fixed;
-        font-size: 25px;
-
-    }
-
-    main {
-        font-size: 25px;
-        max-width: 95%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    #video {
-        max-width: 100%;;   
-    }
-
-
-        
-    #pricing {
-        display: block;
-    }
-
-    #pricing section {
-        border: 1px;
-        border-style: dotted;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-        width: 60%;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
-    
-    body {
-        margin: 0;
-        padding: 0;
-        font-size: 20px;
     }
     
     
@@ -176,6 +34,11 @@ main img {
     #header {
         display: flex;
         position: fixed;
+        top: 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: lightskyblue;
 
     }
 
@@ -190,7 +53,10 @@ main img {
     #video {
         max-width: 100%;;   
     }
-
+    
+    #services {
+    }
+    
 
         
     #pricing {
@@ -207,4 +73,162 @@ main img {
     }
 }
 
+@media screen and (min-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+    }
+    
+    
+    nav {
+        display: flex;
+        justify-content: left;
+        column-gap: 0px;
+        justify-content: space-between;
+        max-width: 50%;
+    }
+
+
+    nav a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: underline;
+    
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+        background-color: white;
+    }
+
+    #header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: lightskyblue;
+        font-size: 25px;
+
+    }
+
+    main {
+        font-size: 25px;
+        max-width: 95%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 30px 5px 0px 0px;
+    }
+
+    #video {
+        max-width: 100%;;   
+    }
+    
+    #services {
+    }
+    
+
+        
+    #pricing {
+        display: block;
+    }
+
+    #pricing section {
+        border: 1px;
+        border-style: dotted;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 60%;
+    }
+
+}
+
+
+
+/*Standard PC screens, biggest devices*/
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    #header-img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    #header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        background-color: lightskyblue;
+        /*min-height: 60px;*/
+    
+    }
+    
+    nav {
+        display: flex;
+        column-gap: 60px;
+        justify-content: space-between;
+        max-width: 40%;
+    }
+    
+    nav a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: underline;
+    
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+        background-color: white;
+    }
+    
+    main {
+        padding: 70px;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 20%;
+    }
+    
+    #services {
+    }
+    
+    #img {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #pricing {
+        display: flex;
+        text-align: center;
+    }
+    
+    #pricing section {
+        border: 1px;
+        border-style: dotted;
+        width: 40%;
+    }
+}

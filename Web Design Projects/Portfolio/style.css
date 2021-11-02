@@ -1,0 +1,120 @@
+/*Cellphones*/
+@media screen and (max-width: 600px) {
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 0;
+    }
+   
+    #navbar {
+        width: 100%;
+        background-color: lightseagreen;
+        position: fixed;
+        display: flex;
+        top: 0;
+        justify-content: space-between;
+    }
+
+    #navbar a {
+        display: block;
+        color: black;
+        padding: 10px 14px;
+        text-decoration: underline;
+    }
+
+
+    #welcome-section {
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        margin-top: 30px;
+        background-color: lightseagreen;
+    }
+
+    #welcome-section article {
+        margin-top: 20px;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .project-tile {
+        max-width: 100%;
+    }
+
+    #contact a {
+        color: black;
+        text-decoration:underline;
+    }
+
+    #contact a:hover{
+        color: black;
+        text-decoration:underline;
+        font-size: larger;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 0;    
+    }
+    
+    #navbar {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        height: 2vw;
+        background-color: lightseagreen;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        font-size: large;
+    }
+
+    #navbar a {
+        color: black;
+        padding: 10px 14px;
+        text-decoration: underline;
+    }
+
+    #navbar a:hover {
+        color: black;
+        padding: 10px 14px;
+        text-decoration: underline;
+    }
+
+    #welcome-section {
+        width: 100%;
+        height: 100vh;
+        margin-top: 30px;
+        background-color: lightseagreen;
+        text-align: center;
+    }
+
+    
+
+    img {
+        max-width: 90%;
+    }
+
+    main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+}
